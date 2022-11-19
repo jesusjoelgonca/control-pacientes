@@ -1,0 +1,54 @@
+<div class="container p-5">
+  <div
+    class="container bg-secondary rounded-5 justify-content-center shadow-personal"
+  >
+    <h1 class="fw-bolder p-5 text-center text-white">Iniciar Sesión</h1>
+    <div class="row">
+      <div class="col-6">
+        <form class="m-5 pt-5" (ngSubmit)="loginProcess()">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Identificación"
+              name="identificacion"
+              [(ngModel)]="iniciarSesion.identificacion"
+            />
+            <label for="floatingInput">Identificación</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Contraseña"
+              name="password"
+              [(ngModel)]="iniciarSesion.password"
+            />
+            <label for="floatingPassword">Contraseña</label>
+          </div>
+          <div class="mb-3 text-center">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg shadow-personal"
+            >
+              Enviar
+            </button>
+          </div>
+          <div class="alert alert-danger" role="alert" *ngIf="success==false">
+            {{msg}}
+          </div>
+        </form>
+      </div>
+      <div class="col-6 text-center">
+        <img
+          src="https://blush.design/api/download?shareUri=OgNyqA9JhoC9c_kh&c=Bottom_0%7E89c5cc_Hair_0%7E2c1b18_Skin_0%7Edcae92_Top_0%7Ea8e5ba&w=800&h=800&fm=png"
+          alt=""
+          class="img-responsive"
+          width="300px"
+        />
+      </div>
+    </div>
+  </div>
+</div>

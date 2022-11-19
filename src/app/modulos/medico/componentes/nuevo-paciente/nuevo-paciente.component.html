@@ -1,0 +1,149 @@
+<div class="container p-5">
+  <div class="container bg-primary p-4">
+    <div class="row">
+      <div class="col-8">
+        <form [formGroup]="crearForm" (ngSubmit)="crearPaciente()"> 
+          <div class="row">
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="identificacion"
+                  name="identificacion"
+                  formControlName="identificacion"
+                />
+                <label for="floatingInput">identificacion</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Primer Nombre"
+                  name="primer_nombre"
+                  formControlName="primer_nombre"
+                />
+                <label for="floatingInput">Primer Nombre</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Segundo Nombre"
+                  name="segundo_nombre"
+                  formControlName="segundo_nombre"
+                />
+                <label for="floatingInput">Segundo Nombre</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Primer Apellido"
+                  name="primer_apellido"
+                  formControlName="primer_apellido"
+                />
+                <label for="floatingInput">Primer Apellido</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Segundo Apellido"
+                  name="segundo_apellido"
+                  formControlName="segundo_apellido"
+                />
+                <label for="floatingInput">Segundo Apellido</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating">
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                  name="genero"
+                  formControlName="genero"
+                >
+                  <option selected>Seleccione aqui</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femnino">Femenino</option>
+                </select>
+                <label for="floatingSelect">Genero</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Fecha de Nacimiento"
+                  name="fecha_nacimiento"
+                  formControlName="fecha_nacimiento"
+                />
+                <label for="floatingInput">Fecha de Nacimiento</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Telefono"
+                  name="telefono"
+                  formControlName="telefono"
+                />
+                <label for="floatingInput">Telefono</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Correo"
+                  name="correo"
+                  formControlName="correo"
+                />
+                <label for="floatingInput">Email</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Ocupación"
+                  name="ocupacion"
+                  formControlName="ocupacion"
+                />
+                <label for="floatingInput">Ocupación</label>
+              </div>
+            </div>
+            <div class="col-8">
+              <button class="btn btn-danger">Añadir</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-4 fondo"></div>
+    </div>
+  </div>
+</div>

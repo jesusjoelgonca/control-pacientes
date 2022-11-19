@@ -1,0 +1,30 @@
+<div class="container p-5">
+  <div class="container-fluid bg-dark text-light p-5">
+    <div class="container bg-dark p-5">
+      <h1 class="display-4 fw-bolder text-center text-white">
+        Citas Solicitadas
+      </h1>
+      <hr />
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 fw-bold">Luz Marina</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Esta Solicitando una cita</p>
+          <small>
+            <button class="btn btn-info btn-sm m-3">Asignar</button>
+            <button class="btn btn-danger btn-sm">Ingorar</button>
+          </small>
+        </a>
+      </div>
+      <div *ngFor="let dato of unirMap">
+          <p>{{dato.paciente_id}}</p>
+      </div>
+    </div>
+  </div>
+</div>

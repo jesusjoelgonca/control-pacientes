@@ -1,0 +1,173 @@
+<div
+  class="modal fade modal-dialog-scrollable"
+  id="Enfermedades"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="EnfermedadesLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="EnfermedadesLabel">Enfermedades</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form class="p-3">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <input
+                  class="form-control form-control-sm"
+                  type="text"
+                  id="cv"
+                  placeholder="cv"
+                  aria-label="cv"
+                />
+                <label for="cv">CV</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  class="form-control form-control-sm"
+                  type="text"
+                  id="respiratorio"
+                  placeholder="Respiratorio"
+                  aria-label="Respiratorio"
+                />
+                <label for="respiratorio">Respiratorio</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <input
+                  class="form-control form-control-sm"
+                  type="text"
+                  id="neufrourologicos"
+                  placeholder="Nefrourologicos"
+                  aria-label="Nefrourologicos"
+                />
+                <label for="neufrourologicos">Nefrourologicos</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  class="form-control form-control-sm"
+                  type="text"
+                  id="neurologicos"
+                  placeholder="Neurologicos"
+                  aria-label="Neurologicos"
+                />
+                <label for="neurologicos">Neurologicos</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  class="form-control form-control-sm"
+                  type="text"
+                  id="hematologicos"
+                  placeholder="Hematologicos"
+                  aria-label="Hematologicos"
+                />
+                <label for="hematologicos">Hematologicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Infectologicos"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Infectologicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Endocrinologicos"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Endocrinologicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Quirurgicos"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Quirurgicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Traumatologicos"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Traumatologicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Alergicos"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Alergicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Epidemiologicos"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Epidemiologicos</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Antecedentes Heredofamiliares"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea"
+                  >Antecedentes Heredofamiliares</label
+                >
+              </div>
+            </div>
+            <span class="fw-bolder mb-3">Ginecologicos</span>
+            <app-genecologicos></app-genecologicos>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

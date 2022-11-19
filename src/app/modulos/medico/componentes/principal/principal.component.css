@@ -1,0 +1,23 @@
+.altura-alert-dashboard {
+    height: 230px;
+    border-radius: 20px;
+    width: 340px;
+    
+    
+}
+
+.altura-alert-dashboard h5{
+    margin-top: 20px;
+    width: 340px;
+    padding: 10px;
+}
+
+.altura-alert-dashboard h4{
+    margin-top: 70px;
+    margin-left: 10px;
+    
+}
+
+.centrar{
+    text-align: center;
+}

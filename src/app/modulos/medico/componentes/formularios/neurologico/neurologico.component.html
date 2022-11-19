@@ -1,0 +1,101 @@
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="Neurologico"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="NeurologicoLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="NeurologicoLabel">Neurologico</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form action="" class="p-3">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Glasgow"
+                  id="floatingTextarea"
+                  name="glasglow"
+                ></textarea>
+                <label for="floatingTextarea">Glasgow</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Motilidad Activa"
+                  id="floatingTextarea"
+                  name="motilidad_activa"
+                ></textarea>
+                <label for="floatingTextarea">Motilidad Activa</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Motilidad Pasiva"
+                  id="floatingTextarea"
+                  name="motilidad_pasiva"
+                ></textarea>
+                <label for="floatingTextarea">Motilidad Pasiva</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Motilidad Refleja"
+                  id="floatingTextarea"
+                  name="motilidad_refleja"
+                ></textarea>
+                <label for="floatingTextarea">Motilidad Refleja</label>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Pares Craneales"
+                  id="floatingTextarea"
+                  name="pares_craneales"
+                ></textarea>
+                <label for="floatingTextarea">Pares Craneales</label>
+              </div>
+            </div>
+            <h5 class="fw-bolder">Sensibilidades</h5>
+            <span class="fw-bolder mb-3">Profunda</span>
+            <app-sensibilidad-profunda></app-sensibilidad-profunda>
+            <span class="fw-bolder mb-3">Superficial</span>
+            <app-sensibilidad-superficial></app-sensibilidad-superficial>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-primary">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

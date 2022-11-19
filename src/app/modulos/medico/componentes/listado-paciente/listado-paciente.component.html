@@ -1,0 +1,121 @@
+<div class="container p-5">
+  <div class="container-fluid bg-dark text-light p-5">
+    <div class="container bg-dark p-5">
+      <div class="row">
+        <div class="col-8">
+          <h5 class="text-white fw-bold">Listado de Pacientes</h5>
+          <div class="list-group rounded-4">
+            <div *ngFor="let paciente of nuevoDato">
+              <button
+                (click)="
+                  toggleShow(
+                    paciente.id,
+                    paciente.primer_nombre, 
+                    paciente.primer_apellido,
+                    paciente.identificacion,
+                    paciente.correo
+                  )
+                "
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    {{ paciente.id }} {{ paciente.primer_nombre }}
+                    {{ paciente.segundo_nombre }}
+                    {{ paciente.primer_apellido }}
+                    {{ paciente.segundo_apellido }}
+                  </h5>
+                  <small
+                    ><strong>Edad:</strong>
+                    {{
+                      2022 - paciente.fecha_nacimiento.split("-", 3)[0]
+                    }}</small
+                  >
+                </div>
+                <div class="mb-1">
+                  <div class="row">
+                    <div class="col">
+                      <small
+                        ><strong>Identificación:</strong>
+                        {{ paciente.identificacion }}</small
+                      >
+                    </div>
+                    <div class="col">
+                      <small
+                        ><strong>Genero:</strong> {{ paciente.genero }}</small
+                      >
+                    </div>
+                    <div class="col">
+                      <small
+                        ><strong>Fecha Nacimiento:</strong>
+                        {{ paciente.fecha_nacimiento }}</small
+                      >
+                    </div>
+                    <div class="col">
+                      <small
+                        ><strong>Telefono:</strong>
+                        {{ paciente.telefono }}</small
+                      >
+                    </div>
+                    <div class="col">
+                      <small
+                        ><strong>Correo:</strong> {{ paciente.correo }}</small
+                      >
+                    </div>
+                    <div class="col">
+                      <small
+                        ><strong>Ocupacion:</strong>
+                        {{ paciente.ocupacion }}</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-4 text-center">
+          <h5 class="fw-bold text-white">Seleccione un Paciente.</h5>
+          <div class="card" style="width: 18rem" *ngIf="isShown">
+            <div class="card-body">
+              <h5 class="card-title text-black mb-3">
+                Paciente: {{ nombre }} {{ apellido }}
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text text-black">¿Que desea hacer?</p>
+              <a
+                [routerLink]="[
+                  '/medico/nueva-consulta/paciente',
+                  getIdPaciente()
+                ]"
+                class="btn btn-danger mb-3"
+                >Nueva Consulta</a
+              >
+              <button (click)="generarUsuario()" class="btn btn-danger mb-3">
+                Generar Usuario
+              </button>
+              <p class="card-text text-black">Opciones</p>
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-dark btn-sm" (click)="eliminar()">
+                    eliminar
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    class="btn btn-success btn-sm"
+                    [routerLink]="['/medico/editar-paciente', getIdPaciente()]"
+                  >
+                    editar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

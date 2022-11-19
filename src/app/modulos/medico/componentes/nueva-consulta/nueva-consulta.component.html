@@ -1,0 +1,212 @@
+<div class="container p-5">
+  <div class="bg-primary container p-5">
+    <h5 class="fw-bold text-white">Informacón Personal</h5>
+    <div class="row">
+      <div class="col-2">
+        <span class="fw-bolder text-white">Identificación</span>
+        <p class="text-white">{{ datosPaciente.identificacion }}</p>
+      </div>
+      <div class="col-2">
+        <span class="fw-bolder text-white">Primer Nombre</span>
+        <p class="text-white">{{ datosPaciente.primer_nombre }}</p>
+      </div>
+      <div class="col-2">
+        <span class="fw-bolder text-white">Segundo Nombre</span>
+        <p class="text-white">{{ datosPaciente.segundo_nombre }}</p>
+      </div>
+      <div class="col-2">
+        <span class="fw-bolder text-white">Primer Apellido</span>
+        <p class="text-white">{{ datosPaciente.primer_apellido }}</p>
+      </div>
+      <div class="col-2">
+        <span class="fw-bolder text-white">Segundo Apellido</span>
+        <p class="text-white">{{ datosPaciente.segundo_apellido }}</p>
+      </div>
+      <div class="col-2">
+        <span class="fw-bolder text-white">Genero</span>
+        <p class="text-white">{{ datosPaciente.genero }}</p>
+      </div>
+      <div class="col-3">
+        <span class="fw-bolder text-white">Fecha de Nacimiento</span>
+        <p class="text-white">1{{ datosPaciente.fecha_nacimiento }}</p>
+      </div>
+      <div class="col-3">
+        <span class="fw-bolder text-white">Telefono/Celular</span>
+        <p class="text-white">{{ datosPaciente.telefono }}</p>
+      </div>
+      <div class="col-3">
+        <span class="fw-bolder text-white">Correo</span>
+        <p class="text-white">{{ datosPaciente.correo }}</p>
+      </div>
+      <div class="col-3">
+        <span class="fw-bolder text-white">Ocupacion</span>
+        <p class="text-white">{{ datosPaciente.ocupacion }}</p>
+      </div>
+    </div>
+    <h5 class="fw-bolder text-white">Registrar Información</h5>
+    <div class="row mb-3">
+      <div class="col-4">
+        <!--- Motivo Consulta --->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#MotivoConsulta"
+          [disabled]="botonDesactivado"
+        >
+          Motivo de Consulta
+        </button>
+        <app-consulta-paciente></app-consulta-paciente>
+      </div>
+      <div class="col-4">
+        <!--Antecedentes Personales-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#AntecedentesPersonales"
+        >
+          Antecedentes Personales
+        </button>
+        <app-antecendetes-personales></app-antecendetes-personales>
+      </div>
+      <div class="col-4">
+        <!--Habitos Fisiologicos-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#HabitosFisiologicos"
+        >
+          Habitos Fisiologicos
+        </button>
+        <app-habitos-fisiologicos></app-habitos-fisiologicos>
+      </div>
+      <div class="col-4">
+        <!--Habitos Toxicos-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#HabitosToxicos"
+        >
+          Habitos Toxicos
+        </button>
+        <app-habitos-toxicos></app-habitos-toxicos>
+      </div>
+      <div class="col-4">
+        <!--Enfermedades-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Enfermedades"
+        >
+          Enfermedades
+        </button>
+        <app-enfermedades></app-enfermedades>
+      </div>
+    </div>
+
+    <!--Examen Fisico-->
+    <span class="fw-bolder text-white">Examen Fisico</span>
+    <div class="row">
+      <div class="col-3">
+        <!--Examen Fisico-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#ExamenFisico"
+        >
+          Examen Fisico
+        </button>
+        <app-examen-fisico></app-examen-fisico>
+      </div>
+      <div class="col-6">
+        <!--Piel, Faneras, Tejido Celular Subcutaneo-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#PielFaneras"
+        >
+          Piel, Faneras, Tejido Celular Subcutaneo
+        </button>
+        <app-p-f-t-c-subcutaneo></app-p-f-t-c-subcutaneo>
+      </div>
+      <div class="col-3 mb-3">
+        <!--Cabeza-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Cabeza"
+        >
+          Cabeza
+        </button>
+        <app-cabeza></app-cabeza>
+      </div>
+      <div class="col">
+        <!--Cuello-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Cuello"
+        >
+          Cuello
+        </button>
+        <app-cuello></app-cuello>
+      </div>
+      <div class="col">
+        <!--Respiratorio-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Respiratorio"
+        >
+          Respiratorio
+        </button>
+        <app-respiratorio></app-respiratorio>
+      </div>
+      <div class="col">
+        <!--Cardiovascular-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Cardiovascular"
+        >
+          Cardiovascular
+        </button>
+        <app-cardiovascular></app-cardiovascular>
+      </div>
+      <div class="col">
+        <!--Abdomen-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Abdomen"
+        >
+          Abdomen
+        </button>
+        <app-abdominal></app-abdominal>
+      </div>
+      <div class="col">
+        <!--Neurologico-->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#Neurologico"
+        >
+          Neurologico
+        </button>
+        <app-neurologico></app-neurologico>
+      </div>
+    </div>
+  </div>
+</div>

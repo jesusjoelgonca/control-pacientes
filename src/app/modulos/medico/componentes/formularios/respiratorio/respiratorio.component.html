@@ -1,0 +1,84 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="Respiratorio"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="RespiratorioLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="RespiratorioLabel">Respiratorio</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form class="p-3" action="">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Inspección"
+                  id="floatingTextarea"
+                  name="inspeccion"
+                ></textarea>
+                <label for="floatingTextarea">Inspección</label>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Palpación"
+                  id="floatingTextarea"
+                  name="palpacion"
+                ></textarea>
+                <label for="floatingTextarea">Palpación</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Percusión"
+                  id="floatingTextarea"
+                  name="percusion"
+                ></textarea>
+                <label for="floatingTextarea">Percusión</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Auscaltación"
+                  id="floatingTextarea"
+                  name="auscultacion"
+                ></textarea>
+                <label for="floatingTextarea">Auscultación</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-primary">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
